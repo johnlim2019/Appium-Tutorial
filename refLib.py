@@ -212,14 +212,17 @@ class OperationsFramework:
                     "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
                 return False
 
-    def hasAttribute(self, expectedValue, attribute, locatorValue=None, locatorType='text', element=None):
+    def hasAttribute(self, expectedValue, attribute, locatorValue=None, locatorType='text', element=None, includes=True):
         expectedValue = expectedValue.strip()
         actualValue = None
         if element != None:
             actualValue = element.get_attribute(attribute).strip()
         else:
             actualValue = self.getElement(locatorValue, locatorType).get_attribute(attribute).strip()
-        result = (expectedValue == actualValue)
+        if includes == True:
+            result = (expectedValue in actualValue)
+        else:
+            result = (expectedValue == actualValue)
         if result:
             if (element == None):
                 self.log.info('For locator value: "'+locatorValue+'" of locator type: "' +

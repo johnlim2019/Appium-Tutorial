@@ -1210,3 +1210,270 @@ Actual:Password: 19 Idiot's Lane, Dumb City does not match Expected:19 Idiot's L
 Actual:Mobile: 12128937138 does not match Expected:12128937138
 31/10/22 11:45:13 AM Monday - __init__ - INFO : For locator value: "9" of locator type: "index"
 Actual:Mobile: 12128937138 does not match Expected:12128937138
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 12:55:31 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:55:31 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:55:31 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:55:33 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:55:33 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:55:33 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:55:33 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:55:34 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:55:34 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:55:34 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:55:34 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:55:35 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:55:35 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:55:35 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:55:35 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:55:36 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:55:36 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:55:37 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:55:38 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:55:38 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:55:38 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_55_38.png
+31/10/22 12:55:38 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_55_38.png
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 12:57:55 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:57:55 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:57:55 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:57:56 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:57:56 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:57:57 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:57:57 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:57:58 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:57:58 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:57:58 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:57:58 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:57:59 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:57:59 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:57:59 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:57:59 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:58:00 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:58:00 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:58:00 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:58:00 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:58:02 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:58:02 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:58:02 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:58:03 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_58_02.png
+31/10/22 12:58:03 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_58_02.png
+31/10/22 12:58:20 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 12:58:20 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 12:58:21 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:58:21 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:58:21 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 12:58:22 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:58:22 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 12:58:23 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:58:23 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 12:58:23 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:58:23 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 12:58:24 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:58:24 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 12:58:24 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:58:24 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 12:58:25 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:58:25 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 12:58:25 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:58:25 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:58:26 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 12:58:27 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:58:27 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 12:58:27 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_58_27.png
+31/10/22 12:58:27 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_contact_us_form_31_10_22_12_58_27.png
+31/10/22 12:58:27 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_catch_fail_31_10_22_12_58_27.png
+31/10/22 12:58:27 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_catch_fail_31_10_22_12_58_27.png
+31/10/22 12:58:27 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_catch_fail_31_10_22_12_58_27.png
+31/10/22 01:08:59 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 01:08:59 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_title_31_10_22_13_08_59.png
+31/10/22 01:09:00 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_image_31_10_22_13_09_00.png
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:09:00 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 01:09:00 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:09:00 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:09:01 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:09:01 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:09:02 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:09:02 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:09:03 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:09:03 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:09:03 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:09:03 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:09:04 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:09:04 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:09:04 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:09:04 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:09:05 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:09:05 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:09:05 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:09:05 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:09:06 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:09:07 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 01:09:07 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 01:12:37 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 01:12:37 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 01:12:37 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_title_31_10_22_13_12_37.png
+31/10/22 01:12:37 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_image_31_10_22_13_12_37.png
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:12:38 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: matches Expected:Contact Us form
+31/10/22 01:12:38 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: matches Expected:Contact Us form
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:12:38 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:12:39 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:12:39 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:12:39 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:12:39 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:12:40 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:12:40 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:12:41 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:12:41 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:12:41 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:12:41 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:12:42 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:12:42 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:12:42 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:12:42 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:12:43 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:12:44 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:12:44 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:12:44 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 01:12:44 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo does not match Expected:Hugo
+31/10/22 01:13:37 PM Monday - __init__ - INFO : Element with locator value 'Appium Demo' of locator type 'text' is found
+31/10/22 01:13:37 PM Monday - __init__ - INFO : Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+31/10/22 01:13:37 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_title_31_10_22_13_13_37.png
+31/10/22 01:13:37 PM Monday - __init__ - INFO : 0 elements of locator value 'android.widget.ImageView' of 'class' type not found
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Screenshot save to Path : ./screenshots/test_homepage_image_31_10_22_13_13_37.png
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Element with locator value '1' of locator type 'index' is found
+31/10/22 01:13:38 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 01:13:38 PM Monday - __init__ - INFO : For locator value: "1" of locator type: "index"
+Actual: does not match Expected:Contact Us form
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Element with locator value 'CONTACT US FORM' of locator type 'text' is found
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:13:38 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :CONTACT US FORM
+31/10/22 01:13:39 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:13:39 PM Monday - __init__ - INFO : Element with locator value 'Enter Name' of locator type 'text' is found
+31/10/22 01:13:39 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:13:39 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Enter Name
+31/10/22 01:13:40 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:13:40 PM Monday - __init__ - INFO : Element with locator value '2' of locator type 'index' is found
+31/10/22 01:13:40 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:13:40 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :2
+31/10/22 01:13:41 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:13:41 PM Monday - __init__ - INFO : Element with locator value '3' of locator type 'index' is found
+31/10/22 01:13:41 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:13:41 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :3
+31/10/22 01:13:42 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:13:42 PM Monday - __init__ - INFO : Element with locator value '4' of locator type 'index' is found
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Send text  on Element with LocatorType: index and with the locatorValue :4
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Element with locator value 'SUBMIT' of locator type 'text' is found
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:13:43 PM Monday - __init__ - INFO : Element with locator value '6' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo matches Expected:Hugo
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "6" of locator type: "index"
+Actual:Name: Hugo matches Expected:Hugo
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '7' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '7' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "7" of locator type: "index"
+Actual:Email: @mail matches Expected:@mail
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "7" of locator type: "index"
+Actual:Email: @mail matches Expected:@mail
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '8' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '8' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "8" of locator type: "index"
+Actual:Password: 19 Idiot's Lane, Dumb City matches Expected:19 Idiot's Lane, Dumb City
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "8" of locator type: "index"
+Actual:Password: 19 Idiot's Lane, Dumb City matches Expected:19 Idiot's Lane, Dumb City
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '9' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : Element with locator value '9' of locator type 'index' is found
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "9" of locator type: "index"
+Actual:Mobile: 12128937138 matches Expected:12128937138
+31/10/22 01:13:44 PM Monday - __init__ - INFO : For locator value: "9" of locator type: "index"
+Actual:Mobile: 12128937138 matches Expected:12128937138

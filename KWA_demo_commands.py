@@ -36,23 +36,23 @@ class DemoCommands(OperationsFramework):
     _sampleAddress = "19 Idiot's Lane, Dumb City"
 
     def testHomepage(self):
-        try:
-            assert self.isDisplayed(self._title) == True
-            image = self.getElementFromElements('android.widget.ImageView', 'class', 0)
-            print('target element: ' + str(image))
-            assert image.is_displayed()
-        except:
-            self.screenShot()
+        assert self.isDisplayed(self._title) == True
+        self.screenShot('test_homepage_title')
+        image = self.getElementFromElements('android.widget.ImageView', 'class', 0)
+        assert image.is_displayed()
+        self.screenShot('test_homepage_image')
 
     def testEnterSomeValue(self):
         self.clickElement(self._EnterSomeValue)
-        self.isDisplayed('Enter some Value')
+        assert self.isDisplayed('Enter some Value') == True
+        self.screenShot('test_enter_some_value_title')
         input = self.getElementFromElements('android.widget.EditText', 'class', 0)
         input.send_keys(self._sampleText)
         self.clickElement(self._SubmitBtn)
         input.clear()
         preview = self.getElementFromElements('android.widget.TextView', 'class', -1)
         assert self.hasAttribute(element=preview, attribute='text', expectedValue=self._sampleText) == True
+        self.screenShot('test_enter_some_value_typing')
 
     def testContactForm(self):
         self.hasAttribute('Contact Us form', 'text', locatorValue='1', locatorType='index')
@@ -66,3 +66,6 @@ class DemoCommands(OperationsFramework):
         assert self.hasAttribute(self._sampleEmail, 'text', '7', 'index') == True
         assert self.hasAttribute(self._sampleAddress, 'text', '8', 'index') == True
         assert self.hasAttribute(self._sampleNumber, 'text', '9', 'index') == True
+
+    def testFail(self):
+        assert True == False

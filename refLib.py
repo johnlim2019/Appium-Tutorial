@@ -21,6 +21,21 @@ from selenium.common.exceptions import (
 )
 from selenium.webdriver.support.wait import WebDriverWait
 
+# for allure report
+import allure
+
+# for qase integration
+from qaseio.pytest import qase
+
+def allureSteps(text):
+    with allure.step(text):
+        time.sleep(1)
+        pass
+
+def reportSteps(text):
+    with qase.step(text):
+        time.sleep(1)
+        pass
 
 def getDriver():
     caps = {}
@@ -42,7 +57,8 @@ def getDriver():
 
 
 def loggerBuild(fileName):
-    logName = inspect.stack()[1][3]  # one is the name record of the function calling, then third element is the name
+    # one is the name record of the function calling, then third element is the name
+    logName = inspect.stack()[1].function
     logger = logging.getLogger(logName)
     logger.setLevel(logging.DEBUG)
     fileHandler = logging.FileHandler("{0}.log".format(fileName), mode="a")
@@ -63,23 +79,23 @@ class OperationsFramework:
         self.actions = ActionChains(driver)
         self.log = loggerBuild(file)
 
-    def scrollDown(actions, driver, distance):
-        actions.w3c_actions = ActionBuilder(
-            driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch")
+    def scrollDown(self, distance):
+        self.actions.w3c_actions = ActionBuilder(
+            self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch")
         )
-        actions.w3c_actions.pointer_action.move_to_location(0, 2000)
-        actions.w3c_actions.pointer_action.pointer_down()
-        actions.w3c_actions.pointer_action.move_to_location(0, 2000 - distance)
-        actions.w3c_actions.pointer_action.release()
-        actions.perform()
+        self.actions.w3c_actions.pointer_action.move_to_location(0, 600)
+        self.actions.w3c_actions.pointer_action.pointer_down()
+        self.actions.w3c_actions.pointer_action.move_to_location(0, 600 - distance)
+        self.actions.w3c_actions.pointer_action.release()
+        self.actions.perform()
 
     def scrollUp(self, distance):
         self.actions.w3c_actions = ActionBuilder(
             self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch")
         )
-        self.actions.w3c_actions.pointer_action.move_to_location(0, 2000)
+        self.actions.w3c_actions.pointer_action.move_to_location(0, 600)
         self.actions.w3c_actions.pointer_action.pointer_down()
-        self.actions.w3c_actions.pointer_action.move_to_location(0, 2000 + distance)
+        self.actions.w3c_actions.pointer_action.move_to_location(0, 600 + distance)
         self.actions.w3c_actions.pointer_action.release()
         self.actions.perform()
 
@@ -119,7 +135,9 @@ class OperationsFramework:
                           "' of locator type '" + locatorType + "' is found")
             return element
         except:
-            self.log.info("Locator value '" + locatorValue + "' of '" + locatorType + "' type not found")
+            err = "Locator value '" + locatorValue + "' of '" + locatorType + "' type not found"
+            self.log.info(err)
+            self.reportErrScreenshot('getElement')
             return element
 
     def waitForElements(self, locatorValue, locatorType, timeout=25):
@@ -159,7 +177,9 @@ class OperationsFramework:
                           locatorValue + "' of locator type '" + locatorType + "' is found")
             return element
         except:
-            self.log.info("0 elements of locator value '" + locatorValue + "' of '" + locatorType + "' type not found")
+            err = "No elements of locator value '" + locatorValue + "' of '" + locatorType + "' type not found"
+            self.log.info(err)
+            self.reportErrScreenshot('getElementFromElements')
             return element
 
     def clickElement(self, locatorValue, locatorType="text"):
@@ -170,9 +190,12 @@ class OperationsFramework:
             element.click()
             self.log.info(
                 "Clicked on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+            return element
         except:
-            self.log.info(
-                "Unable to click on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+            err = "Unable to click on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue
+            self.log.info(err)
+            self.reportErrScreenshot('clickElement')
+            return element
 
     def sendText(self, text, locatorValue, locatorType="text"):
         element = None
@@ -183,34 +206,35 @@ class OperationsFramework:
             self.log.info(
                 "Send text  on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
         except:
-            self.log.info(
-                "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+            err = "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue
+            self.log.info(err)
+            self.reportErrScreenshot('sendText')
+            assert False
 
-    def isDisplayed(self, locatorValue, locatorType="text"):
+    def isDisplayed(self, locatorValue, locatorType="text", el=None):
         element = None
-        if (type(locatorValue) != str):
-            try:
-                locatorValue.is_displayed()
-                self.log.info(
-                    "Given XML object is displayed")
-                return True
-            except:
-                self.log.info(
-                    "Given XML object is not displayed")
-                return False
+        try:
+            locatorType = locatorType.lower().strip()
+            element = self.getElement(locatorValue, locatorType)
+            element.is_displayed()
+            self.log.info(
+                "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + "is displayed ")
+            return True
+        except:
+            self.log.info(
+                "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
+            return False
 
-        else:
-            try:
-                locatorType = locatorType.lower().strip()
-                element = self.getElement(locatorValue, locatorType)
-                element.is_displayed()
-                self.log.info(
-                    "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + "is displayed ")
-                return True
-            except:
-                self.log.info(
-                    "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
-                return False
+    def isDisplayedElement(self, Element):
+        try:
+            Element.is_displayed()
+            self.log.info(
+                "Given XML object is displayed")
+            return True
+        except:
+            self.log.info(
+                "Given XML object is not displayed")
+            return False
 
     def hasAttribute(self, expectedValue, attribute, locatorValue=None, locatorType='text', element=None, includes=True):
         expectedValue = expectedValue.strip()
@@ -235,7 +259,6 @@ class OperationsFramework:
                               '"\nActual:'+actualValue+' does not match Expected:'+expectedValue)
             else:
                 self.log.info('In given element, Actual:'+actualValue+' does not matches Expected:'+expectedValue)
-
         return result
 
     def screenShot(self, screenshotName):
@@ -245,6 +268,12 @@ class OperationsFramework:
         try:
             self.driver.save_screenshot(screenshotPath)
             self.log.info("Screenshot save to Path : " + screenshotPath)
-
+            return screenshotPath
         except:
             self.log.info("Unable to save Screenshot to the Path : " + screenshotPath)
+
+    def reportErrScreenshot(self, name):
+        imageFile = self.screenShot(name)
+        allure.attach.file(imageFile, attachment_type=allure.attachment_type.PNG)
+        qase.attach(imageFile)
+   

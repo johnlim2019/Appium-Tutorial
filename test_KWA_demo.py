@@ -2,24 +2,36 @@ import pytest
 import unittest
 import allure
 from KWA_demo_commands import DemoCommands
+from qaseio.pytest import qase
 
 
 @pytest.mark.usefixtures('createClassDriver')
 class test_KWA_Demo(unittest.TestCase):
     @pytest.fixture(autouse=True)
     def setupClassObject(self):
-        self.commands = DemoCommands(self.driver,__file__)
-        allure.allureLogs('set up driver for each test')
-    @pytest.mark.order(1)
+        self.commands = DemoCommands(self.driver, __file__)
+        yield 
+        # if we are not at the homepage, go back, check by looking for the title after scrolling to the top
+        self.commands.scrollUp(600)
+        if self.commands.isDisplayed('Appium Demo') != True:
+            self.commands.systemBackBtn()
+    @qase.title('testHomepage')
     def test_Homepage(self):
         self.commands.testHomepage()
-    @pytest.mark.order(2)    
-    @pytest.mark.skip
+
+    @qase.title('testEnterSomeValue')        
     def test_EnterSomeValue(self):
         self.commands.testEnterSomeValue()
-    @pytest.mark.order(3)
+    
+    @qase.title('testContactForm')
     def test_contactForm(self):
         self.commands.testContactForm()
-    @pytest.mark.order(4)
-    def test_failTest(self):
-        self.commands.testFail()
+    
+    @qase.title('testFailGetElement')
+    def test_failGetElement(self):
+        self.commands.testFailGetElement()
+    
+    @qase.title('testFailGetElementFromElements')       
+    def test_failGetElementFromElements(self):
+        self.commands.testFailGetElementFromElements()
+

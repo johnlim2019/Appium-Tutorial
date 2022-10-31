@@ -1,0 +1,4 @@
+[32mINFO    [0m __init__:refLib.py:181 No elements of locator value 'android.widget.TextView' of 'class' type not found
+[32mINFO    [0m __init__:refLib.py:270 Screenshot save to Path : ./screenshots/getElementFromElements_31_10_22_20_36_30.png
+[32mINFO    [0m __init__:refLib.py:134 Element with locator value 'Appium Demo' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:220 Element with LocatorType: text and with the locatorValue :Appium Demois displayed

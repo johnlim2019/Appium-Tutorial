@@ -1,0 +1,14 @@
+[32mINFO    [0m __init__:refLib.py:134 Element with locator value 'ENTER SOME VALUE' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:191 Clicked on Element with LocatorType: text and with the locatorValue :ENTER SOME VALUE
+[32mINFO    [0m __init__:refLib.py:134 Element with locator value 'Enter some Value' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:220 Element with LocatorType: text and with the locatorValue :Enter some Valueis displayed 
+[32mINFO    [0m __init__:refLib.py:181 No elements of locator value 'android.widget.EditText' of 'class' type not found
+[32mINFO    [0m __init__:refLib.py:270 Screenshot save to Path : ./screenshots/getElementFromElements_31_10_22_20_34_16.png
+[32mINFO    [0m __init__:refLib.py:134 Element with locator value 'SUBMIT' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:191 Clicked on Element with LocatorType: text and with the locatorValue :SUBMIT
+[32mINFO    [0m __init__:refLib.py:181 No elements of locator value 'android.widget.TextView' of 'class' type not found
+[32mINFO    [0m __init__:refLib.py:270 Screenshot save to Path : ./screenshots/getElementFromElements_31_10_22_20_34_19.png
+[32mINFO    [0m __init__:refLib.py:255 In given element, Actual:I can't count the reasons I should stay. One by one they all begin to fade away. matches Expected:I can't count the reasons I should stay. One by one they all begin to fade away.
+[32mINFO    [0m __init__:refLib.py:139 Locator value 'Appium Demo' of 'text' type not found
+[32mINFO    [0m __init__:refLib.py:270 Screenshot save to Path : ./screenshots/getElement_31_10_22_20_34_47.png
+[32mINFO    [0m __init__:refLib.py:224 Element with LocatorType: text and with the locatorValue :Appium Demo is not displayed

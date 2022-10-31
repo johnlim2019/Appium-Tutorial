@@ -1,0 +1,9 @@
+[32mINFO    [0m __init__:refLib.py:131 Element with locator value 'Appium Demo' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:217 Element with LocatorType: text and with the locatorValue :Appium Demois displayed 
+[32mINFO    [0m __init__:refLib.py:178 No elements of locator value 'android.widget.ImageView' of 'class' type not found
+[32mINFO    [0m __init__:refLib.py:267 Screenshot save to Path : ./screenshots/getElementFromElements_31_10_22_20_25_24.png
+[32mINFO    [0m __init__:refLib.py:131 Element with locator value 'ENTER SOME VALUE' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:188 Clicked on Element with LocatorType: text and with the locatorValue :ENTER SOME VALUE
+[32mINFO    [0m __init__:refLib.py:136 Locator value 'Appium Demo' of 'text' type not found
+[32mINFO    [0m __init__:refLib.py:267 Screenshot save to Path : ./screenshots/getElement_31_10_22_20_25_50.png
+[32mINFO    [0m __init__:refLib.py:221 Element with LocatorType: text and with the locatorValue :Appium Demo is not displayed

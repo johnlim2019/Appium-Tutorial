@@ -1,6 +1,7 @@
 import pytest
 import time
 import refLib
+import KWA_demo_commands
 @pytest.fixture(scope='class')
 def createClassDriver(request):
     print('Before Class')
@@ -11,8 +12,6 @@ def createClassDriver(request):
     time.sleep(5)
     driver.quit()
     print('After Class')
-
-
 
 # fixtures 
 # these are statically declared variables and instances that will be used by 

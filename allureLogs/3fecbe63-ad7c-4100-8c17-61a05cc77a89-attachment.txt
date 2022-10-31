@@ -1,0 +1,4 @@
+[32mINFO    [0m __init__:refLib.py:136 Locator value 'AUTO SUGGESTION' of 'text' type not found
+[32mINFO    [0m __init__:refLib.py:267 Screenshot save to Path : ./screenshots/getElement_31_10_22_20_15_18.png
+[32mINFO    [0m __init__:refLib.py:131 Element with locator value 'Appium Demo' of locator type 'text' is found
+[32mINFO    [0m __init__:refLib.py:217 Element with LocatorType: text and with the locatorValue :Appium Demois displayed

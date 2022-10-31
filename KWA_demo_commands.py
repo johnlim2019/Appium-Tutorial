@@ -1,4 +1,5 @@
-from refLib import OperationsFramework
+from refLib import OperationsFramework, allureSteps, reportSteps
+from qaseio.pytest import qase
 import time
 # the following Demo Class is inheriting/extending the OperationsFramework class
 # DemoCommands is child of OperationsFramework
@@ -37,35 +38,53 @@ class DemoCommands(OperationsFramework):
 
     def testHomepage(self):
         assert self.isDisplayed(self._title) == True
-        self.screenShot('test_homepage_title')
+        reportSteps('Found Title')
+        allureSteps('Found Title')
         image = self.getElementFromElements('android.widget.ImageView', 'class', 0)
         assert image.is_displayed()
-        self.screenShot('test_homepage_image')
+        reportSteps('Found Image')
+        allureSteps('Found Image')        
+        self.clickElement(self._EnterSomeValue)
 
     def testEnterSomeValue(self):
         self.clickElement(self._EnterSomeValue)
         assert self.isDisplayed('Enter some Value') == True
-        self.screenShot('test_enter_some_value_title')
+        reportSteps('Found "Enter some Value" title')
+        allureSteps('Found "Enter some Value" title')
         input = self.getElementFromElements('android.widget.EditText', 'class', 0)
         input.send_keys(self._sampleText)
         self.clickElement(self._SubmitBtn)
         input.clear()
         preview = self.getElementFromElements('android.widget.TextView', 'class', -1)
         assert self.hasAttribute(element=preview, attribute='text', expectedValue=self._sampleText) == True
-        self.screenShot('test_enter_some_value_typing')
+        reportSteps('Successful submission of text')
+        allureSteps('Successful submission of text')
 
     def testContactForm(self):
-        self.hasAttribute('Contact Us form', 'text', locatorValue='1', locatorType='index')
+        self.hasAttribute('CONTACT US FORM', 'text', locatorValue='4', locatorType='index')
         self.clickElement(self._ContactUsForm)
+        self.hasAttribute('CONTACT US FORM', 'text', locatorValue='0', locatorType='index')
         self.sendText(self._sampleName, 'Enter Name')
-        self.sendText(self._sampleEmail, '2', 'index')
-        self.sendText(self._sampleAddress, '3', 'index')
-        self.sendText(self._sampleNumber, '4', 'index')
+        self.sendText(self._sampleEmail, 'Enter Email')
+        self.sendText(self._sampleAddress, 'Enter Address')
+        self.sendText(self._sampleNumber, 'Enter Mobile No')
         self.clickElement('SUBMIT')
         assert self.hasAttribute(self._sampleName, 'text', '6', 'index') == True
+        reportSteps('Name Field Works')
+        allureSteps('Name Field Works')
         assert self.hasAttribute(self._sampleEmail, 'text', '7', 'index') == True
+        reportSteps('Email Field Works')
+        allureSteps('Email Field Works')
         assert self.hasAttribute(self._sampleAddress, 'text', '8', 'index') == True
+        reportSteps('Address Field Works')        
+        allureSteps('Address Field Works')        
         assert self.hasAttribute(self._sampleNumber, 'text', '9', 'index') == True
+        reportSteps('Ph. Num Field Works')
+        allureSteps('Ph. Num Field Works')
+        
+    def testFailGetElement(self):
+        assert self.getElement(self._AutoSuggest) != None
 
-    def testFail(self):
-        assert True == False
+    def testFailGetElementFromElements(self):
+        assert self.getElementFromElements('android.widget.TextView','class',123) != None
+        

@@ -79,7 +79,7 @@ class OperationsFramework:
         )
         self.actions.w3c_actions.pointer_action.move_to_location(0, 2000)
         self.actions.w3c_actions.pointer_action.pointer_down()
-        self.actions.w3c_actions.pointer_action.move_to_location(0, 2000 - distance)
+        self.actions.w3c_actions.pointer_action.move_to_location(0, 2000 + distance)
         self.actions.w3c_actions.pointer_action.release()
         self.actions.perform()
 
@@ -120,9 +120,9 @@ class OperationsFramework:
             return element
         except:
             self.log.info("Locator value '" + locatorValue + "' of '" + locatorType + "' type not found")
-        return element
-    
-    def waitForElements(self,locatorValue, locatorType, timeout=25):
+            return element
+
+    def waitForElements(self, locatorValue, locatorType, timeout=25):
         locatorType = locatorType.lower().strip()
         elements = None
         wait = WebDriverWait(self.driver, timeout, poll_frequency=1, ignored_exceptions=[
@@ -139,27 +139,28 @@ class OperationsFramework:
                 lambda x: x.find_elements(AppiumBy.ANDROID_UIAUTOMATOR, "UiSelector().index(%d)" % int(locatorValue)))
         elif locatorType == "text":
             elements = wait.until(lambda x: x.find_elements(AppiumBy.ANDROID_UIAUTOMATOR,
-                                 'UiSelector().textContains("%s")' % locatorValue))
+                                                            'UiSelector().textContains("%s")' % locatorValue))
         elif locatorType == "xpath":
             elements = wait.until(lambda x: x.find_elements(AppiumBy.XPATH, '%s' % (locatorValue)))
         else:
             self.log.info(locatorType + " type not in state machine")
         return elements
-    
-    def getElementFromElements(self,locatorValue,locatorType='text',index=0):
+
+    def getElementFromElements(self, locatorValue, locatorType='text', index=0):
         element = None
         try:
             locatorType = locatorType.lower().strip()
             elements = self.waitForElements(locatorValue, locatorType)
-            print('elements in getElementFromElements()')
-            print(elements)
+            # print('elements in getElementFromElements()')
+            # print(elements)
             element = elements[index]
-            print(elements[0])
-            # self.log.info(elements.length + " elements with 'locator value '" + locatorValue +"' of locator type '" + locatorType + "' is found")
+            # print(elements[0])
+            self.log.info('index: '+index + " element with 'locator value '" +
+                          locatorValue + "' of locator type '" + locatorType + "' is found")
             return element
         except:
             self.log.info("0 elements of locator value '" + locatorValue + "' of '" + locatorType + "' type not found")
-        return element
+            return element
 
     def clickElement(self, locatorValue, locatorType="text"):
         element = None
@@ -185,10 +186,9 @@ class OperationsFramework:
             self.log.info(
                 "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
 
-
     def isDisplayed(self, locatorValue, locatorType="text"):
         element = None
-        if (type(locatorValue) != str): 
+        if (type(locatorValue) != str):
             try:
                 locatorValue.is_displayed()
                 self.log.info(
@@ -199,7 +199,7 @@ class OperationsFramework:
                     "Given XML object is not displayed")
                 return False
 
-        else: 
+        else:
             try:
                 locatorType = locatorType.lower().strip()
                 element = self.getElement(locatorValue, locatorType)
@@ -211,10 +211,33 @@ class OperationsFramework:
                 self.log.info(
                     "Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
                 return False
-    
+
+    def hasAttribute(self, expectedValue, attribute, locatorValue=None, locatorType='text', element=None):
+        expectedValue = expectedValue.strip()
+        actualValue = None
+        if element != None:
+            actualValue = element.get_attribute(attribute).strip()
+        else:
+            actualValue = self.getElement(locatorValue, locatorType).get_attribute(attribute).strip()
+        result = (expectedValue == actualValue)
+        if result:
+            if (element == None):
+                self.log.info('For locator value: "'+locatorValue+'" of locator type: "' +
+                              locatorType+'"\nActual:'+actualValue+' matches Expected:'+expectedValue)
+            else:
+                self.log.info('In given element, Actual:'+actualValue+' matches Expected:'+expectedValue)
+        else:
+            if (element == None):
+                self.log.info('For locator value: "'+locatorValue+'" of locator type: "'+locatorType +
+                              '"\nActual:'+actualValue+' does not match Expected:'+expectedValue)
+            else:
+                self.log.info('In given element, Actual:'+actualValue+' does not matches Expected:'+expectedValue)
+
+        return result
+
     def screenShot(self, screenshotName):
         fileName = screenshotName + "_" + (time.strftime("%d_%m_%y_%H_%M_%S")) + ".png"
-        screenshotDirectory = "../screenshots/"
+        screenshotDirectory = "./screenshots/"
         screenshotPath = screenshotDirectory + fileName
         try:
             self.driver.save_screenshot(screenshotPath)

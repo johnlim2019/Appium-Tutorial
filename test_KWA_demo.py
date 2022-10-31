@@ -10,10 +10,14 @@ class test_KWA_Demo(unittest.TestCase):
     def setupClassObject(self):
         self.commands = DemoCommands(self.driver,__file__)
         print('constructed commands obj')
+    @pytest.mark.only
     @pytest.mark.order(1)
     def test_Homepage(self):
         self.commands.testHomepage()
     @pytest.mark.order(2)    
     def test_EnterSomeValue(self):
         self.commands.testEnterSomeValue()
-
+    @pytest.mark.only
+    @pytest.mark.order(3)
+    def test_contactForm(self):
+        self.commands.testContactForm()
